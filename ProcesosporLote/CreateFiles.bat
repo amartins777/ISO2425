@@ -14,13 +14,13 @@ if %opcion% EQU 2 goto opt2
 
 :opt1
 set /P nombre="Introduce un nombre para el archivo "
-echo > archivo.txt
+echo > %nombre%.txt
 pause
 exit
 
 
 :opt2
 set /P nombre="Introduce un nombre para el archivo "
-echo > archivo.bat
+echo > %nombre%.bat
 pause
 exit
