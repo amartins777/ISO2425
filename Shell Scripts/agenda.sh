@@ -19,7 +19,7 @@ while true; do
 		case $opt in
 
 			a)
-				read -p " Dime un DNI" dni
+				read -p " Dime un DNI " dni
 				if grep "^$dni:" agenda.txt > /dev/null; then
 
 					echo " Usuario existente "
@@ -34,7 +34,7 @@ while true; do
 			;;
 
 			b)
-				read -p "Dime un DNI" dni
+				read -p " Dime un DNI " dni
 				if grep "^$dni:" agenda.txt > /dev/null; then
 
 					name=$(grep "^$dni:" agenda.txt |  cut -d ":" -f 2)
