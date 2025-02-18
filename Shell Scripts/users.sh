@@ -16,11 +16,8 @@ while read us x uid gid d h shell; do
 
 	if [ $uid -ge 1000 ]; then
 		echo "$us - $uid "
-
-
-
+  
 	fi
-
 	count=$(echo $uid | wc -l)
 done < /etc/passwd
 
