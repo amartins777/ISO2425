@@ -36,7 +36,7 @@ while opcion != "E":
     elif opcion == "B":
         directorio = input("Introduce el nombre del directorio: ")
         if os.path.isdir(directorio):
-            print("\n--- Información del directorio ---")
+            print("Información del directorio")
             print(f"Ruta absoluta: {os.path.abspath(directorio)}")
             print(f"Contenido: {os.listdir(directorio)}")
             tamanio = 0
@@ -60,11 +60,11 @@ while opcion != "E":
     elif opcion == "D":
         lista = input("¿Qué lista deseas mostrar? (A)rchivos / (D)irectorios: ").lower()
         if lista == "a":
-            print("\n--- Lista de archivos ---")
+            print("Lista de archivos ")
             for archivo in archivos:
                 print(archivo)
         elif lista == "d":
-            print("\n--- Lista de directorios ---")
+            print("Lista de directorios ")
             for directorio in directorios:
                 print(directorio)
         else:
